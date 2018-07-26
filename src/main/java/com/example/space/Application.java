@@ -10,8 +10,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 18-7-26
  */
 @SpringBootApplication
-public class SpringbootTutorialApplication {
+public class Application {
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootTutorialApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 }
