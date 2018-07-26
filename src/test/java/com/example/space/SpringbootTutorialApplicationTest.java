@@ -1,7 +1,6 @@
-package com.space;
+package com.example.space;
 
-import com.space.web.HelloController;
-import jdk.net.SocketFlow;
+import com.example.space.web.HelloController;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

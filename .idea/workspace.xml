@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="531971df-4b98-40d6-ad97-c704cd68c347" name="Default" comment="" />
+    <list default="true" id="531971df-4b98-40d6-ad97-c704cd68c347" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/space/SpringbootTutorialApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/space/web/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/space/SpringbootTutorialApplicationTest.java" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpringbootTutorialApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/space/SpringbootTutorialApplication.java">
+      <file leaf-file-name="SpringbootTutorialApplication.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/space/SpringbootTutorialApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="132">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#250#251#0" expanded="true" />
@@ -46,10 +50,10 @@
         </entry>
       </file>
       <file leaf-file-name="SpringbootTutorialApplicationTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/space/SpringbootTutorialApplicationTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/space/SpringbootTutorialApplicationTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="648">
-              <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+              <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#724#725#0" expanded="true" />
@@ -72,8 +76,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelloController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/space/web/HelloController.java">
+      <file leaf-file-name="HelloController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/space/web/HelloController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
               <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
@@ -105,16 +109,20 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/example/space/SpringbootTutorialApplication.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yaml" />
         <option value="$PROJECT_DIR$/src/test/java/com/space/SpringbootTutorialApplicationTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/space/web/HelloController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/space/web/HelloController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/space/SpringbootTutorialApplication.java" />
       </list>
     </option>
   </component>
@@ -129,6 +137,7 @@
     <option name="width" value="1814" />
     <option name="height" value="1080" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -169,15 +178,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="space" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot_tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot_tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="space" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot_tutorial" type="b2602c69:ProjectViewProjectNode" />
@@ -348,7 +348,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532568242222</updated>
-      <workItem from="1532568245610" duration="5444000" />
+      <workItem from="1532568245610" duration="5742000" />
     </task>
     <servers />
   </component>
@@ -358,7 +358,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5444000" />
+    <option name="totallyTimeSpent" value="5742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1963" y="0" width="1814" height="1080" extended-state="0" />
@@ -383,10 +383,10 @@
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.53369564" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Spring" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32934782" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23612684" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32934782" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23612684" />
       <window_info anchor="right" id="Bean Validation" />
       <window_info id="Web" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" />
@@ -417,10 +417,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/space/SpringbootTutorialApplicationTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/space/SpringbootTutorialApplicationTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
-          <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#724#725#0" expanded="true" />
@@ -453,19 +453,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/space/SpringbootTutorialApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#270#271#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/space/web/HelloController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/space/web/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
@@ -473,6 +461,18 @@
             <element signature="imports" expanded="true" />
             <element signature="e#354#355#0" expanded="true" />
             <element signature="e#405#406#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/space/SpringbootTutorialApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
           </folding>
         </state>
       </provider>
