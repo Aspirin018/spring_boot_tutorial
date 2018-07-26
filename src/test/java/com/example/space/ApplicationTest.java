@@ -1,14 +1,18 @@
 package com.example.space;
 
+import com.example.space.service.UserService;
 import com.example.space.web.HelloController;
 import com.example.space.web.UserController;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.mock.web.MockServletContext;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.RequestBuilder;
@@ -25,19 +29,21 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @author liyu
  * @date 18-7-26
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = MockServletContext.class)
-@WebAppConfiguration
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class ApplicationTest {
 
     private MockMvc mockMvc;
 
-    @Before
+    @Autowired
+    private UserService userService;
+
+   /* @Before
     public void setUp() {
         //运行测试前需要改动测试的controller
         mockMvc = MockMvcBuilders.standaloneSetup(new UserController()).build();
     }
-
+*/
     @Test
     public void getHello() throws Exception {
         mockMvc.perform(get("/hello").accept(MediaType.APPLICATION_JSON))
@@ -88,5 +94,26 @@ public class ApplicationTest {
         mockMvc.perform(requestBuilder)
                 .andExpect(content().string(equalTo("success")));
 */
+    }
+
+    @Before
+    public void setUp() {
+        userService.deleteAllUsers();
+    }
+
+    @Test
+    public void test() {
+        userService.create("a", 1);
+        userService.create("b", 2);
+        userService.create("c", 3);
+        userService.create("d", 4);
+        userService.create("e", 5);
+
+        Assert.assertEquals(5, userService.getAllUsers().intValue());
+
+        userService.deleteByName("a");
+        userService.deleteByName("e");
+
+        Assert.assertEquals(3, userService.getAllUsers().intValue());
     }
 }

@@ -1,9 +1,11 @@
 package com.example.space.web;
 
 import com.example.space.domain.User;
+import com.example.space.service.UserService;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
@@ -16,13 +18,16 @@ import java.util.*;
 @RequestMapping("/users")
 public class UserController {
 
+    @Autowired
+    private UserService userService;
+
     static Map<Long, User> users = Collections.synchronizedMap(new HashMap<Long, User>());
 
     @ApiOperation(value = "获取用户列表", notes = "")
     @GetMapping("/")
-    public List<User> getUserList(){
-        List<User> r = new ArrayList<User>(users.values());
-        return r;
+    public Integer getUserList(){
+//        List<User> r = new ArrayList<User>(users.values());
+        return userService.getAllUsers();
     }
 
     @ApiOperation(value = "创建用户", notes = "根据User对象创建用户")
