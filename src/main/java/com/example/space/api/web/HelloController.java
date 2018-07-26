@@ -1,4 +1,4 @@
-package com.example.space.web;
+package com.example.space.api.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

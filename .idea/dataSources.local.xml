@@ -11,5 +11,15 @@
       <user-name>root</user-name>
       <introspection-schemas>*:springboot_tutorial</introspection-schemas>
     </data-source>
+    <data-source name="spring2" uuid="b8a5349c-dc5b-4fbb-a20a-fa8e655f9f0d">
+      <database-info product="MySQL" version="5.6.40" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>*:spring2</introspection-schemas>
+    </data-source>
   </component>
 </project>

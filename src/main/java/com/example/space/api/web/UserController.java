@@ -1,7 +1,7 @@
-package com.example.space.web;
+package com.example.space.api.web;
 
-import com.example.space.domain.User;
-import com.example.space.service.UserService;
+import com.example.space.api.domain.User;
+import com.example.space.api.service.UserService;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;

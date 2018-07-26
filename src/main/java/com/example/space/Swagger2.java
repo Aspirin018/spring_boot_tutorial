@@ -25,7 +25,7 @@ public class Swagger2 {
                         .version("1.0")
                         .build()
                 ).select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.space.web"))
+                .apis(RequestHandlerSelectors.basePackage("com.example.space.api.web"))
                 .paths(PathSelectors.any())
                 .build();
     }

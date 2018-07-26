@@ -1,6 +1,6 @@
-package com.example.space.service.Impl;
+package com.example.space.api.service.Impl;
 
-import com.example.space.service.UserService;
+import com.example.space.api.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;

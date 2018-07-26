@@ -1,17 +1,34 @@
-package com.example.space.domain;
+package com.example.space.api.domain;
+
+import javax.persistence.*;
 
 /**
  * @author liyu
  * @date 18-7-26
  */
+@Entity
+@Table(name = "user")
 public class User {
 
+    @Id
+    @GeneratedValue
     private Long id;
+
+    @Column(nullable = false)
     private String name;
+
+    @Column(nullable = false)
     private Integer age;
 
     public Long getId() {
         return id;
+    }
+
+    public  User(){}
+
+    public User(String name, Integer age){
+        this.name = name;
+        this.age = age;
     }
 
     public void setId(Long id) {
