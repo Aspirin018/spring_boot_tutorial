@@ -1,6 +1,7 @@
 package com.example.space.api.domain.primary;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * @author liyu
@@ -8,7 +9,9 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "user")
-public class User {
+public class User implements Serializable {
+
+    private static final long serialVersionUID = 1124967796278684883L;
 
     @Id
     @GeneratedValue

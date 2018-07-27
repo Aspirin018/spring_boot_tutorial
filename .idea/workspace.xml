@@ -2,26 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="531971df-4b98-40d6-ad97-c704cd68c347" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/space/api/domain/secondary/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/space/api/domain/secondary/MessageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/space/framework/config/PrimaryConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/space/framework/config/SecondaryConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/space/api/domain/primary/UserRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/space/api/domain/secondary/Message.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/space/api/domain/secondary/MessageRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/space/framework/config/PrimaryConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/space/framework/config/SecondaryConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b8a5349c-dc5b-4fbb-a20a-fa8e655f9f0d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b8a5349c-dc5b-4fbb-a20a-fa8e655f9f0d.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/space/framework/redis/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/space/framework/redis/RedisObjectSerializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/space/api/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/space/api/domain/primary/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/space/api/domain/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/space/api/domain/primary/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/space/api/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/space/api/web/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/space/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/space/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/space/api/domain/primary/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/space/api/domain/primary/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/space/ApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/space/ApplicationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/space/api/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/space/api/domain/primary/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/space/api/domain/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/space/api/web/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/space/api/web/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/space/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/space/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/space/api/domain/primary/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/space/api/domain/primary/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/space/ApplicationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/space/ApplicationTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -90,8 +81,8 @@
       <file leaf-file-name="ApplicationTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/space/ApplicationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="200" column="64" lean-forward="true" selection-start-line="200" selection-start-column="64" selection-end-line="200" selection-end-column="64" />
+            <state relative-caret-position="2813">
+              <caret line="232" column="35" selection-start-line="232" selection-start-column="35" selection-end-line="232" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,47 +90,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/space/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#328#329#0" expanded="true" />
+                <element signature="e#390#391#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            <state relative-caret-position="302">
+              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrimaryConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/space/framework/config/PrimaryConfig.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="29" column="61" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SecondaryConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/space/framework/config/SecondaryConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="32" column="43" lean-forward="true" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/space/api/domain/primary/UserRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="226">
+              <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -147,57 +125,68 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/space/api/domain/primary/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/space/api/domain/secondary/Message.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+            <state relative-caret-position="110">
+              <caret line="13" column="70" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
               <folding>
-                <element signature="e#545#546#0" expanded="true" />
-                <element signature="e#579#580#0" expanded="true" />
-                <element signature="e#607#608#0" expanded="true" />
-                <element signature="e#638#639#0" expanded="true" />
-                <element signature="e#665#666#0" expanded="true" />
-                <element signature="e#705#706#0" expanded="true" />
-                <element signature="e#737#738#0" expanded="true" />
-                <element signature="e#771#772#0" expanded="true" />
-                <element signature="e#801#802#0" expanded="true" />
-                <element signature="e#847#848#0" expanded="true" />
-                <element signature="e#885#886#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/space/api/domain/secondary/MessageRepository.java">
+      <file leaf-file-name="RedisObjectSerializer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/space/framework/redis/RedisObjectSerializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
+            <state relative-caret-position="379">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1398#1399#0" expanded="true" />
+                <element signature="e#1455#1456#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JpaProperties.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.0.RELEASE/spring-boot-autoconfigure-2.0.0.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/orm/jpa/JpaProperties.java">
+      <file leaf-file-name="RedisConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/space/framework/redis/RedisConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="153" column="31" selection-start-line="153" selection-start-column="31" selection-end-line="153" selection-end-column="31" />
+            <state relative-caret-position="195">
+              <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HibernateSettings.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.0.RELEASE/spring-boot-autoconfigure-2.0.0.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/orm/jpa/HibernateSettings.java">
+      <file leaf-file-name="RedisAccessor.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.5.RELEASE/spring-data-redis-2.0.5.RELEASE-sources.jar!/org/springframework/data/redis/core/RedisAccessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+            <state relative-caret-position="391">
+              <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JedisConnectionFactory.java" pinned="false" current-in-tab="true">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.5.RELEASE/spring-data-redis-2.0.5.RELEASE-sources.jar!/org/springframework/data/redis/connection/jedis/JedisConnectionFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="148" column="38" selection-start-line="148" selection-start-column="38" selection-end-line="148" selection-end-column="38" />
+              <folding>
+                <element signature="e#4898#4899#0" expanded="true" />
+                <element signature="e#4948#4949#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JedisPoolConfig.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/JedisPoolConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -208,8 +197,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -232,18 +221,21 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/space/web/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/space/domain/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/space/domain/User.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/space/framework/config/DataSourceConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/space/framework/config/JdbcTemplateConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/space/api/domain/primary/PrimaryConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/space/framework/config/PrimaryConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/space/framework/config/SecondaryConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/space/api/domain/primary/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/space/api/domain/primary/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/space/api/domain/secondary/Message.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/space/api/domain/secondary/MessageRepository.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/space/ApplicationTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/space/api/domain/primary/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/space/framework/redis/RedisObjectSerializer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/space/ApplicationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/space/Application.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/space/framework/redis/RedisConfig.java" />
       </list>
     </option>
   </component>
@@ -374,7 +366,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="space" type="462c0819:PsiDirectoryNode" />
               <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot_tutorial" type="b2602c69:ProjectViewProjectNode" />
@@ -625,44 +617,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532568242222</updated>
-      <workItem from="1532568245610" duration="26720000" />
+      <workItem from="1532568245610" duration="30028000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ApplicationTest_test - 2018.07.26 at 18h 24m 49s.xml">
+    <history-entry file="ApplicationTest_test - 2018.07.27 at 12h 05m 55s.xml">
       <configuration name="ApplicationTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_test - 2018.07.26 at 18h 30m 40s.xml">
+    <history-entry file="ApplicationTest_test - 2018.07.27 at 12h 07m 04s.xml">
       <configuration name="ApplicationTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_test - 2018.07.26 at 18h 44m 01s.xml">
+    <history-entry file="ApplicationTest_test - 2018.07.27 at 12h 07m 43s.xml">
       <configuration name="ApplicationTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_test - 2018.07.26 at 18h 46m 44s.xml">
+    <history-entry file="ApplicationTest_test - 2018.07.27 at 12h 08m 47s.xml">
       <configuration name="ApplicationTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_test - 2018.07.26 at 18h 51m 16s.xml">
+    <history-entry file="ApplicationTest_test - 2018.07.27 at 12h 10m 36s.xml">
       <configuration name="ApplicationTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_test - 2018.07.26 at 18h 54m 10s.xml">
+    <history-entry file="ApplicationTest_test - 2018.07.27 at 12h 12m 02s.xml">
       <configuration name="ApplicationTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_test - 2018.07.26 at 18h 55m 21s.xml">
+    <history-entry file="ApplicationTest_test - 2018.07.27 at 12h 13m 07s.xml">
       <configuration name="ApplicationTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_test - 2018.07.26 at 20h 45m 17s.xml">
+    <history-entry file="ApplicationTest_test - 2018.07.27 at 12h 13m 49s.xml">
       <configuration name="ApplicationTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_test - 2018.07.26 at 20h 46m 10s.xml">
+    <history-entry file="ApplicationTest_test - 2018.07.27 at 12h 14m 52s.xml">
       <configuration name="ApplicationTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationTest_test - 2018.07.26 at 20h 46m 25s.xml">
+    <history-entry file="ApplicationTest_test - 2018.07.27 at 12h 17m 19s.xml">
       <configuration name="ApplicationTest.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26720000" />
+    <option name="totallyTimeSpent" value="30028000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1987" y="0" width="1794" height="1022" extended-state="0" />
@@ -680,14 +672,14 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978212" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3988372" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" weight="0.32790697" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38023257" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25813952" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" weight="0.30465117" />
@@ -748,7 +740,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -784,17 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/space/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#270#271#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -898,13 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="72" column="65" lean-forward="true" selection-start-line="72" selection-start-column="65" selection-end-line="72" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/zaxxer/HikariCP/2.7.8/HikariCP-2.7.8-sources.jar!/com/zaxxer/hikari/HikariDataSource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -950,7 +924,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/space/framework/config/PrimaryConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
-          <caret line="29" column="61" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="61" />
+          <caret line="29" column="61" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -960,7 +934,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/space/framework/config/SecondaryConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
-          <caret line="32" column="43" lean-forward="true" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -974,13 +948,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/space/api/domain/primary/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1018,20 +985,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/space/ApplicationTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/space/api/domain/primary/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="200" column="64" lean-forward="true" selection-start-line="200" selection-start-column="64" selection-end-line="200" selection-end-column="64" />
+        <state relative-caret-position="110">
+          <caret line="13" column="70" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/space/framework/redis/RedisObjectSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1398#1399#0" expanded="true" />
+            <element signature="e#1455#1456#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        <state relative-caret-position="302">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/space/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/space/ApplicationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2813">
+          <caret line="232" column="35" selection-start-line="232" selection-start-column="35" selection-end-line="232" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.5.RELEASE/spring-data-redis-2.0.5.RELEASE-sources.jar!/org/springframework/data/redis/core/RedisAccessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/JedisPoolConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/space/framework/redis/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.5.RELEASE/spring-data-redis-2.0.5.RELEASE-sources.jar!/org/springframework/data/redis/connection/jedis/JedisConnectionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="148" column="38" selection-start-line="148" selection-start-column="38" selection-end-line="148" selection-end-column="38" />
+          <folding>
+            <element signature="e#4898#4899#0" expanded="true" />
+            <element signature="e#4948#4949#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
