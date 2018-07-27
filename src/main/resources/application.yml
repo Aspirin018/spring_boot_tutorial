@@ -25,3 +25,11 @@ spring:
   jpa:
     hibernate:
           ddl-auto: update
+########################
+######## log多彩输出 ####
+########################
+  output:
+    ansi:
+      enabled: detect
+logging:
+  level: debug

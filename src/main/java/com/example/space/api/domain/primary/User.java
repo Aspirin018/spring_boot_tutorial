@@ -1,4 +1,4 @@
-package com.example.space.api.domain;
+package com.example.space.api.domain.primary;
 
 import javax.persistence.*;
 

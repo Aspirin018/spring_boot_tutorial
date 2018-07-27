@@ -5,6 +5,7 @@ server:
   port: 8082
 ########################
 ######## datasource ####
+#####使用jdbc-url，而不是url,否则无法获取数据源
 ########################
 spring:
   datasource:
