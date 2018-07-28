@@ -352,3 +352,239 @@
 2018-07-28 16:45:13,240  INFO Application:59 - Started Application in 7.609 seconds (JVM running for 7.969)
 2018-07-28 16:45:30,666  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
 2018-07-28 16:45:30,689  INFO DispatcherServlet:513 - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2018-07-28 16:53:42,579  INFO SpringBootTestContextBootstrapper:308 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.space.ApplicationTest], using SpringBootContextLoader
+2018-07-28 16:53:42,585  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.example.space.ApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-07-28 16:53:42,586  INFO AnnotationConfigContextLoaderUtils:82 - Could not detect default configuration classes for test class [com.example.space.ApplicationTest]: ApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-07-28 16:53:42,694  INFO SpringBootTestContextBootstrapper:244 - Found @SpringBootConfiguration com.example.space.Application for test class com.example.space.ApplicationTest
+2018-07-28 16:53:42,779  INFO SpringBootTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-07-28 16:53:42,884  INFO SpringBootTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@120f102b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@625732, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@51dcb805, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@66498326, org.springframework.test.context.support.DirtiesContextTestExecutionListener@cad498c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1e6454ec, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2accdbb5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@b62d79, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6631f5ca, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5ace1ed4, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1613674b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@27ff5d15]
+2018-07-28 16:53:42,967  INFO Version:21 - HV000001: Hibernate Validator 6.0.7.Final
+2018-07-28 16:53:43,175  INFO ApplicationTest:50 - Starting ApplicationTest on liyu-pc with PID 12255 (started by liyu in /home/liyu/repo/springboot_tutorial)
+2018-07-28 16:53:43,175  INFO ApplicationTest:656 - The following profiles are active: dev
+2018-07-28 16:53:43,199  INFO GenericWebApplicationContext:589 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@42b02722: startup date [Sat Jul 28 16:53:43 CST 2018]; root of context hierarchy
+2018-07-28 16:53:43,746  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-07-28 16:53:43,790  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-07-28 16:53:43,922  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-07-28 16:53:43,935  INFO RepositoryConfigurationExtensionSupport:283 - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.space.api.domain.primary.UserRepository.
+2018-07-28 16:53:43,936  INFO RepositoryConfigurationExtensionSupport:283 - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.space.api.domain.secondary.MessageRepository.
+2018-07-28 16:53:43,938  INFO DefaultListableBeanFactory:824 - Overriding bean definition for bean 'userMongoRepository' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2018-07-28 16:53:43,947  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-07-28 16:53:43,954  INFO RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.space.api.domain.primary.UserMongoRepository.
+2018-07-28 16:53:43,954  INFO RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.space.api.domain.primary.UserRepository.
+2018-07-28 16:53:43,954  INFO RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.space.api.domain.secondary.MessageRepository.
+2018-07-28 16:53:44,361  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$c50713be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:53:44,384  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$b97ad862] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:53:44,411  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:53:44,415  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:53:44,429  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:53:44,434  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration$$EnhancerBySpringCGLIB$$6a0c74bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:53:44,452  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:53:44,462  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$910e9bea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:53:44,608  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:53:44,678  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:53:44,696  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'cacheManager' of type [org.springframework.data.redis.cache.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:53:44,698  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:53:44,713  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7bf4dda0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:53:44,904  INFO HikariDataSource:110 - HikariPool-1 - Starting...
+2018-07-28 16:53:45,064  INFO HikariDataSource:123 - HikariPool-1 - Start completed.
+2018-07-28 16:53:45,101  INFO LocalContainerEntityManagerFactoryBean:361 - Building JPA container EntityManagerFactory for persistence unit 'primaryPersistenceUnit'
+2018-07-28 16:53:45,116  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: primaryPersistenceUnit
+	...]
+2018-07-28 16:53:45,186  INFO Version:45 - HHH000412: Hibernate Core {5.2.14.Final}
+2018-07-28 16:53:45,188  INFO Environment:213 - HHH000206: hibernate.properties not found
+2018-07-28 16:53:45,223  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-07-28 16:53:45,299  INFO HikariDataSource:110 - HikariPool-2 - Starting...
+2018-07-28 16:53:45,302  INFO HikariDataSource:123 - HikariPool-2 - Start completed.
+2018-07-28 16:53:45,311  INFO Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-07-28 16:53:45,687  INFO LocalContainerEntityManagerFactoryBean:394 - Initialized JPA EntityManagerFactory for persistence unit 'primaryPersistenceUnit'
+2018-07-28 16:53:45,720  INFO LocalContainerEntityManagerFactoryBean:361 - Building JPA container EntityManagerFactory for persistence unit 'secondaryPersistenceUnit'
+2018-07-28 16:53:45,720  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: secondaryPersistenceUnit
+	...]
+2018-07-28 16:53:45,727  INFO Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-07-28 16:53:45,764  INFO LocalContainerEntityManagerFactoryBean:394 - Initialized JPA EntityManagerFactory for persistence unit 'secondaryPersistenceUnit'
+2018-07-28 16:53:46,219  WARN JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:235 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-07-28 16:53:46,543  INFO cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-28 16:53:46,609  INFO connection:71 - Opened connection [connectionId{localValue:1, serverValue:52}] to localhost:27017
+2018-07-28 16:53:46,614  INFO cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 0]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3612982}
+2018-07-28 16:53:47,413  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-07-28 16:53:47,621  INFO RequestMappingHandlerMapping:548 - Mapped "{[/hello]}" onto public java.lang.String com.example.space.api.web.HelloController.hello()
+2018-07-28 16:53:47,622  INFO RequestMappingHandlerMapping:548 - Mapped "{[/testErrorHandler]}" onto public java.lang.String com.example.space.api.web.HelloController.testErrorHandler(org.springframework.ui.ModelMap) throws java.lang.Exception
+2018-07-28 16:53:47,622  INFO RequestMappingHandlerMapping:548 - Mapped "{[/testMyException]}" onto public java.lang.String com.example.space.api.web.HelloController.testMyException(org.springframework.ui.ModelMap) throws java.lang.Exception
+2018-07-28 16:53:47,623  INFO RequestMappingHandlerMapping:548 - Mapped "{[/]}" onto public java.lang.String com.example.space.api.web.HelloController.index(org.springframework.ui.ModelMap)
+2018-07-28 16:53:47,631  INFO RequestMappingHandlerMapping:548 - Mapped "{[/users/{id}],methods=[GET]}" onto public com.example.space.api.domain.primary.User com.example.space.api.web.UserController.getUser(java.lang.Long)
+2018-07-28 16:53:47,631  INFO RequestMappingHandlerMapping:548 - Mapped "{[/users/{id}],methods=[PUT]}" onto public java.lang.String com.example.space.api.web.UserController.putUser(java.lang.Long,com.example.space.api.domain.primary.User)
+2018-07-28 16:53:47,632  INFO RequestMappingHandlerMapping:548 - Mapped "{[/users],methods=[DELETE]}" onto public java.lang.String com.example.space.api.web.UserController.deleteUser(java.lang.Long)
+2018-07-28 16:53:47,632  INFO RequestMappingHandlerMapping:548 - Mapped "{[/users/],methods=[GET]}" onto public java.lang.Integer com.example.space.api.web.UserController.getUserList()
+2018-07-28 16:53:47,632  INFO RequestMappingHandlerMapping:548 - Mapped "{[/users/],methods=[POST]}" onto public java.lang.String com.example.space.api.web.UserController.postUser(com.example.space.api.domain.primary.User)
+2018-07-28 16:53:47,637  INFO RequestMappingHandlerMapping:548 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-07-28 16:53:47,638  INFO RequestMappingHandlerMapping:548 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-07-28 16:53:47,639  INFO RequestMappingHandlerMapping:548 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-07-28 16:53:47,645  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-28 16:53:47,646  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-28 16:53:47,845  INFO PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-07-28 16:53:48,518  INFO RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@42b02722: startup date [Sat Jul 28 16:53:43 CST 2018]; root of context hierarchy
+2018-07-28 16:53:48,618  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-28 16:53:48,618  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-28 16:53:48,652  INFO ExceptionHandlerExceptionResolver:289 - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-07-28 16:53:48,693  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-28 16:53:48,858  INFO WelcomePageHandlerMapping:61 - Adding welcome page template: index
+2018-07-28 16:53:49,147  INFO DefaultLifecycleProcessor:351 - Starting beans in phase 2147483647
+2018-07-28 16:53:49,147  INFO DocumentationPluginsBootstrapper:151 - Context refreshed
+2018-07-28 16:53:49,174  INFO DocumentationPluginsBootstrapper:154 - Found 1 custom documentation plugin(s)
+2018-07-28 16:53:49,207  INFO ApiListingReferenceScanner:41 - Scanning for api listing references
+2018-07-28 16:53:49,342  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,345  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,346  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,347  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,348  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,349  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,350  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,351  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,352  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,353  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,354  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,354  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,355  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,356  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,356  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,357  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,358  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,359  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,360  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,360  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,361  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,362  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,362  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,363  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:53:49,398  INFO ScheduledAnnotationBeanPostProcessor:275 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-07-28 16:53:49,411  INFO ApplicationTest:59 - Started ApplicationTest in 6.488 seconds (JVM running for 7.161)
+2018-07-28 16:53:49,573  INFO ApplicationTest:300 - 输出info
+2018-07-28 16:53:49,573 ERROR ApplicationTest:302 - 输出error
+2018-07-28 16:53:49,577  INFO GenericWebApplicationContext:989 - Closing org.springframework.web.context.support.GenericWebApplicationContext@42b02722: startup date [Sat Jul 28 16:53:43 CST 2018]; root of context hierarchy
+2018-07-28 16:53:49,580  INFO DefaultLifecycleProcessor:366 - Stopping beans in phase 2147483647
+2018-07-28 16:53:49,588  INFO LocalContainerEntityManagerFactoryBean:572 - Closing JPA EntityManagerFactory for persistence unit 'secondaryPersistenceUnit'
+2018-07-28 16:53:49,588  INFO LocalContainerEntityManagerFactoryBean:572 - Closing JPA EntityManagerFactory for persistence unit 'primaryPersistenceUnit'
+2018-07-28 16:53:49,589  INFO HikariDataSource:381 - HikariPool-2 - Shutdown initiated...
+2018-07-28 16:53:49,591  INFO HikariDataSource:383 - HikariPool-2 - Shutdown completed.
+2018-07-28 16:53:49,592  INFO HikariDataSource:381 - HikariPool-1 - Shutdown initiated...
+2018-07-28 16:53:49,594  INFO HikariDataSource:383 - HikariPool-1 - Shutdown completed.
+2018-07-28 16:54:44,179  INFO SpringBootTestContextBootstrapper:308 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.space.ApplicationTest], using SpringBootContextLoader
+2018-07-28 16:54:44,185  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.example.space.ApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-07-28 16:54:44,186  INFO AnnotationConfigContextLoaderUtils:82 - Could not detect default configuration classes for test class [com.example.space.ApplicationTest]: ApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-07-28 16:54:44,281  INFO SpringBootTestContextBootstrapper:244 - Found @SpringBootConfiguration com.example.space.Application for test class com.example.space.ApplicationTest
+2018-07-28 16:54:44,373  INFO SpringBootTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-07-28 16:54:44,468  INFO SpringBootTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@120f102b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@625732, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@51dcb805, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@66498326, org.springframework.test.context.support.DirtiesContextTestExecutionListener@cad498c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1e6454ec, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2accdbb5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@b62d79, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6631f5ca, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5ace1ed4, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1613674b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@27ff5d15]
+2018-07-28 16:54:44,540  INFO Version:21 - HV000001: Hibernate Validator 6.0.7.Final
+2018-07-28 16:54:44,752  INFO ApplicationTest:50 - Starting ApplicationTest on liyu-pc with PID 12615 (started by liyu in /home/liyu/repo/springboot_tutorial)
+2018-07-28 16:54:44,753  INFO ApplicationTest:656 - The following profiles are active: dev
+2018-07-28 16:54:44,775  INFO GenericWebApplicationContext:589 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@e70f13a: startup date [Sat Jul 28 16:54:44 CST 2018]; root of context hierarchy
+2018-07-28 16:54:45,410  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-07-28 16:54:45,441  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-07-28 16:54:45,567  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-07-28 16:54:45,581  INFO RepositoryConfigurationExtensionSupport:283 - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.space.api.domain.primary.UserRepository.
+2018-07-28 16:54:45,582  INFO RepositoryConfigurationExtensionSupport:283 - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.space.api.domain.secondary.MessageRepository.
+2018-07-28 16:54:45,583  INFO DefaultListableBeanFactory:824 - Overriding bean definition for bean 'userMongoRepository' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2018-07-28 16:54:45,590  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-07-28 16:54:45,597  INFO RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.space.api.domain.primary.UserMongoRepository.
+2018-07-28 16:54:45,598  INFO RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.space.api.domain.primary.UserRepository.
+2018-07-28 16:54:45,598  INFO RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.space.api.domain.secondary.MessageRepository.
+2018-07-28 16:54:46,057  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$3a41cca5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:54:46,078  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$2eb59149] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:54:46,102  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:54:46,106  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:54:46,118  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:54:46,122  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration$$EnhancerBySpringCGLIB$$df472da3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:54:46,136  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:54:46,144  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$64954d1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:54:46,293  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:54:46,361  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:54:46,380  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'cacheManager' of type [org.springframework.data.redis.cache.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:54:46,382  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:54:46,397  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f12f9687] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-28 16:54:46,597  INFO HikariDataSource:110 - HikariPool-1 - Starting...
+2018-07-28 16:54:46,792  INFO HikariDataSource:123 - HikariPool-1 - Start completed.
+2018-07-28 16:54:46,833  INFO LocalContainerEntityManagerFactoryBean:361 - Building JPA container EntityManagerFactory for persistence unit 'primaryPersistenceUnit'
+2018-07-28 16:54:46,852  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: primaryPersistenceUnit
+	...]
+2018-07-28 16:54:46,929  INFO Version:45 - HHH000412: Hibernate Core {5.2.14.Final}
+2018-07-28 16:54:46,930  INFO Environment:213 - HHH000206: hibernate.properties not found
+2018-07-28 16:54:46,964  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-07-28 16:54:47,038  INFO HikariDataSource:110 - HikariPool-2 - Starting...
+2018-07-28 16:54:47,042  INFO HikariDataSource:123 - HikariPool-2 - Start completed.
+2018-07-28 16:54:47,049  INFO Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-07-28 16:54:47,399  INFO LocalContainerEntityManagerFactoryBean:394 - Initialized JPA EntityManagerFactory for persistence unit 'primaryPersistenceUnit'
+2018-07-28 16:54:47,428  INFO LocalContainerEntityManagerFactoryBean:361 - Building JPA container EntityManagerFactory for persistence unit 'secondaryPersistenceUnit'
+2018-07-28 16:54:47,429  INFO LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: secondaryPersistenceUnit
+	...]
+2018-07-28 16:54:47,433  INFO Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-07-28 16:54:47,456  INFO LocalContainerEntityManagerFactoryBean:394 - Initialized JPA EntityManagerFactory for persistence unit 'secondaryPersistenceUnit'
+2018-07-28 16:54:47,910  WARN JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:235 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-07-28 16:54:48,329  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-07-28 16:54:48,693  INFO cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-28 16:54:48,760  INFO connection:71 - Opened connection [connectionId{localValue:1, serverValue:53}] to localhost:27017
+2018-07-28 16:54:48,763  INFO cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 0]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1976944}
+2018-07-28 16:54:48,959  INFO RequestMappingHandlerMapping:548 - Mapped "{[/hello]}" onto public java.lang.String com.example.space.api.web.HelloController.hello()
+2018-07-28 16:54:48,960  INFO RequestMappingHandlerMapping:548 - Mapped "{[/testErrorHandler]}" onto public java.lang.String com.example.space.api.web.HelloController.testErrorHandler(org.springframework.ui.ModelMap) throws java.lang.Exception
+2018-07-28 16:54:48,960  INFO RequestMappingHandlerMapping:548 - Mapped "{[/testMyException]}" onto public java.lang.String com.example.space.api.web.HelloController.testMyException(org.springframework.ui.ModelMap) throws java.lang.Exception
+2018-07-28 16:54:48,960  INFO RequestMappingHandlerMapping:548 - Mapped "{[/]}" onto public java.lang.String com.example.space.api.web.HelloController.index(org.springframework.ui.ModelMap)
+2018-07-28 16:54:48,965  INFO RequestMappingHandlerMapping:548 - Mapped "{[/users/],methods=[GET]}" onto public java.lang.Integer com.example.space.api.web.UserController.getUserList()
+2018-07-28 16:54:48,965  INFO RequestMappingHandlerMapping:548 - Mapped "{[/users/],methods=[POST]}" onto public java.lang.String com.example.space.api.web.UserController.postUser(com.example.space.api.domain.primary.User)
+2018-07-28 16:54:48,966  INFO RequestMappingHandlerMapping:548 - Mapped "{[/users/{id}],methods=[GET]}" onto public com.example.space.api.domain.primary.User com.example.space.api.web.UserController.getUser(java.lang.Long)
+2018-07-28 16:54:48,966  INFO RequestMappingHandlerMapping:548 - Mapped "{[/users/{id}],methods=[PUT]}" onto public java.lang.String com.example.space.api.web.UserController.putUser(java.lang.Long,com.example.space.api.domain.primary.User)
+2018-07-28 16:54:48,966  INFO RequestMappingHandlerMapping:548 - Mapped "{[/users],methods=[DELETE]}" onto public java.lang.String com.example.space.api.web.UserController.deleteUser(java.lang.Long)
+2018-07-28 16:54:48,969  INFO RequestMappingHandlerMapping:548 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-07-28 16:54:48,969  INFO RequestMappingHandlerMapping:548 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-07-28 16:54:48,970  INFO RequestMappingHandlerMapping:548 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-07-28 16:54:48,974  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-28 16:54:48,974  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-28 16:54:49,102  INFO PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-07-28 16:54:49,653  INFO RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@e70f13a: startup date [Sat Jul 28 16:54:44 CST 2018]; root of context hierarchy
+2018-07-28 16:54:49,775  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-28 16:54:49,775  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-28 16:54:49,813  INFO ExceptionHandlerExceptionResolver:289 - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-07-28 16:54:49,848  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-28 16:54:49,962  INFO WelcomePageHandlerMapping:61 - Adding welcome page template: index
+2018-07-28 16:54:50,215  INFO DefaultLifecycleProcessor:351 - Starting beans in phase 2147483647
+2018-07-28 16:54:50,215  INFO DocumentationPluginsBootstrapper:151 - Context refreshed
+2018-07-28 16:54:50,232  INFO DocumentationPluginsBootstrapper:154 - Found 1 custom documentation plugin(s)
+2018-07-28 16:54:50,259  INFO ApiListingReferenceScanner:41 - Scanning for api listing references
+2018-07-28 16:54:50,368  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,370  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,371  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,372  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,372  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,373  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,374  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,374  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,375  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,376  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,377  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,377  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,378  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,378  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,379  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,380  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,380  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,381  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,382  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,383  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,383  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,384  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,385  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,385  WARN ParameterDataTypeReader:92 - Trying to infer dataType org.springframework.ui.ModelMap
+2018-07-28 16:54:50,412  INFO ScheduledAnnotationBeanPostProcessor:275 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-07-28 16:54:50,417  INFO ApplicationTest:59 - Started ApplicationTest in 5.917 seconds (JVM running for 6.597)
+2018-07-28 16:54:50,522  INFO ApplicationTest:300 - 输出info
+2018-07-28 16:54:50,522 ERROR ApplicationTest:302 - 输出error
+2018-07-28 16:54:50,526  INFO GenericWebApplicationContext:989 - Closing org.springframework.web.context.support.GenericWebApplicationContext@e70f13a: startup date [Sat Jul 28 16:54:44 CST 2018]; root of context hierarchy
+2018-07-28 16:54:50,528  INFO DefaultLifecycleProcessor:366 - Stopping beans in phase 2147483647
+2018-07-28 16:54:50,536  INFO LocalContainerEntityManagerFactoryBean:572 - Closing JPA EntityManagerFactory for persistence unit 'secondaryPersistenceUnit'
+2018-07-28 16:54:50,537  INFO LocalContainerEntityManagerFactoryBean:572 - Closing JPA EntityManagerFactory for persistence unit 'primaryPersistenceUnit'
+2018-07-28 16:54:50,537  INFO HikariDataSource:381 - HikariPool-2 - Shutdown initiated...
+2018-07-28 16:54:50,539  INFO HikariDataSource:383 - HikariPool-2 - Shutdown completed.
+2018-07-28 16:54:50,540  INFO HikariDataSource:381 - HikariPool-1 - Shutdown initiated...
+2018-07-28 16:54:50,541  INFO HikariDataSource:383 - HikariPool-1 - Shutdown completed.
