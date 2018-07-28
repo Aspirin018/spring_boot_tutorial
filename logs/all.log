@@ -588,3 +588,13 @@
 2018-07-28 16:54:50,539  INFO HikariDataSource:383 - HikariPool-2 - Shutdown completed.
 2018-07-28 16:54:50,540  INFO HikariDataSource:381 - HikariPool-1 - Shutdown initiated...
 2018-07-28 16:54:50,541  INFO HikariDataSource:383 - HikariPool-1 - Shutdown completed.
+2018-07-28 17:40:04,679  INFO AnnotationConfigServletWebServerApplicationContext:989 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e383572: startup date [Sat Jul 28 16:45:06 CST 2018]; root of context hierarchy
+2018-07-28 17:40:04,682  INFO DefaultLifecycleProcessor:366 - Stopping beans in phase 2147483647
+2018-07-28 17:40:04,684  INFO AnnotationMBeanExporter:452 - Unregistering JMX-exposed beans on shutdown
+2018-07-28 17:40:04,685  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-07-28 17:40:04,692  INFO LocalContainerEntityManagerFactoryBean:572 - Closing JPA EntityManagerFactory for persistence unit 'secondaryPersistenceUnit'
+2018-07-28 17:40:04,693  INFO LocalContainerEntityManagerFactoryBean:572 - Closing JPA EntityManagerFactory for persistence unit 'primaryPersistenceUnit'
+2018-07-28 17:40:04,694  INFO HikariDataSource:381 - HikariPool-2 - Shutdown initiated...
+2018-07-28 17:40:04,698  INFO HikariDataSource:383 - HikariPool-2 - Shutdown completed.
+2018-07-28 17:40:04,699  INFO HikariDataSource:381 - HikariPool-1 - Shutdown initiated...
+2018-07-28 17:40:04,703  INFO HikariDataSource:383 - HikariPool-1 - Shutdown completed.
