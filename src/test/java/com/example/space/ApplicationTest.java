@@ -6,6 +6,7 @@ import com.example.space.api.domain.primary.UserRepository;
 import com.example.space.api.domain.secondary.Message;
 import com.example.space.api.domain.secondary.MessageRepository;
 import com.example.space.api.service.UserService;
+import com.example.space.framework.ProjectProperties;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -241,7 +242,7 @@ public class ApplicationTest {
         Assert.assertEquals(40, redisTemplate.opsForValue().get("蜘蛛侠").getAge().longValue());
     }*/
 
-   @Before
+   /*@Before
    public void setUp(){
        userMongoRepository.deleteAll();
    }
@@ -262,5 +263,15 @@ public class ApplicationTest {
        u = userMongoRepository.findByName("mama");
        userMongoRepository.delete(u);
        Assert.assertEquals(1, userMongoRepository.findAll().size());
+   }*/
+
+   @Autowired
+    private ProjectProperties projectProperties;
+
+   @Test
+   public void getProperties(){
+       Assert.assertEquals(projectProperties.getName(), "this is author name");
+       Assert.assertEquals(projectProperties.getTitle(), "springboot实战项目");
    }
+
 }

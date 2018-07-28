@@ -45,3 +45,11 @@ spring:
   output:
     ansi:
       enabled: detect
+########################
+######## 自定义属性 ####
+########################
+com:
+  example:
+    space:
+      name: this is author name
+      title: springboot实战项目
