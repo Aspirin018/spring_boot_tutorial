@@ -1,0 +1,4 @@
+2018-07-28 16:45:06,067  INFO Application:50 ---- Starting Application on liyu-pc with PID 10063 (/home/liyu/repo/springboot_tutorial/target/classes started by liyu in /home/liyu/repo/springboot_tutorial)
+2018-07-28 16:45:06,069 DEBUG Application:53 ---- Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2018-07-28 16:45:06,069  INFO Application:656 ---- The following profiles are active: dev
+2018-07-28 16:45:13,240  INFO Application:59 ---- Started Application in 7.609 seconds (JVM running for 7.969)
