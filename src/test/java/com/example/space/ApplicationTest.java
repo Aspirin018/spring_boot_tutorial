@@ -10,6 +10,7 @@ import com.example.space.framework.properties.ProjectProperties;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,6 +19,9 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+import org.apache.log4j.Logger;
+
+
 
 import java.util.concurrent.Future;
 //import  org.springframework.test.web.servlet.result.MockMvcResultMatchers;
@@ -266,15 +270,15 @@ public class ApplicationTest {
        Assert.assertEquals(projectProperties.getTitle(), "springboot实战项目");
    }*/
 
-   @Autowired
+  /* @Autowired
     private Task task;
 
    @Test
    public void test() throws InterruptedException {
-      /* task.doTaskOne();
+      *//* task.doTaskOne();
        task.doTaskTwo();
        task.doTaskThree();
-*/
+*//*
        long start = System.currentTimeMillis();
        Future<String> task1 = task.doTaskOne1();
        Future<String> task2 = task.doTaskTwo2();
@@ -287,6 +291,15 @@ public class ApplicationTest {
        }
        long end = System.currentTimeMillis();
        System.out.println("任务全部完成， 总耗时：" + (end - start) + "毫秒");
-   }
+   }*/
+
+    private Logger logger = Logger.getLogger(getClass());
+
+    @Test
+    public void test() throws Exception {
+        logger.info("输出info");
+        logger.debug("输出debug");
+        logger.error("输出error");
+    }
 
 }

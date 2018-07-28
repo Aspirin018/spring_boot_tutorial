@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.example.space.ApplicationTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.104 s <<< FAILURE! - in com.example.space.ApplicationTest
+initializationError(com.example.space.ApplicationTest)  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.Exception: No runnable methods
+
