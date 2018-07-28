@@ -24,6 +24,8 @@ import java.util.Arrays;
  * @Order定义每个切面的优先级，我们需要@Order(i)注解来标识切面的优先级。i的值越小，优先级越高。
  * 在@Before中优先执行@Order(5)的内容，再执行@Order(10)的内容
  * 在@After和@AfterReturning中优先执行@Order(10)的内容，再执行@Order(5)的内容
+ * 在切入点前的操作，按order的值由小到大执行
+ * 在切入点后的操作，按order的值由大到小执行
  */
 @Aspect
 @Component
