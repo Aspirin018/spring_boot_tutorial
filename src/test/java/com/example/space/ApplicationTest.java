@@ -5,6 +5,7 @@ import com.example.space.api.domain.primary.UserMongoRepository;
 import com.example.space.api.domain.primary.UserRepository;
 import com.example.space.api.domain.secondary.MessageRepository;
 import com.example.space.api.service.UserService;
+import com.example.space.framework.asyncTask.Task;
 import com.example.space.framework.properties.ProjectProperties;
 import org.junit.Assert;
 import org.junit.Test;
@@ -254,13 +255,23 @@ public class ApplicationTest {
        Assert.assertEquals(1, userMongoRepository.findAll().size());
    }*/
 
-   @Autowired
+   /*@Autowired
     private ProjectProperties projectProperties;
 
    @Test
    public void getProperties(){
        Assert.assertEquals(projectProperties.getName(), "this is author name");
        Assert.assertEquals(projectProperties.getTitle(), "springboot实战项目");
+   }*/
+
+   @Autowired
+    private Task task;
+
+   @Test
+   public void test() throws InterruptedException {
+       task.doTaskOne();
+       task.doTaskTwo();
+       task.doTaskThree();
    }
 
 }
