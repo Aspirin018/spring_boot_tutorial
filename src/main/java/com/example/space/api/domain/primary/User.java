@@ -34,6 +34,12 @@ public class User implements Serializable {
         this.age = age;
     }
 
+    public User(Long id, String username, Integer age) {
+        this.id = id;
+        this.name = username;
+        this.age = age;
+    }
+
     public void setId(Long id) {
         this.id = id;
     }

@@ -1,6 +1,7 @@
 package com.example.space;
 
 import com.example.space.api.domain.primary.User;
+import com.example.space.api.domain.primary.UserMongoRepository;
 import com.example.space.api.domain.primary.UserRepository;
 import com.example.space.api.domain.secondary.Message;
 import com.example.space.api.domain.secondary.MessageRepository;
@@ -19,6 +20,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.RequestBuilder;
+
+import java.util.Optional;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
@@ -60,6 +63,9 @@ public class ApplicationTest {
 
     @Autowired
     private RedisTemplate<String, User> redisTemplate;
+
+    @Autowired
+    private UserMongoRepository userMongoRepository;
 
    /* @Before
     public void setUp() {
@@ -220,7 +226,7 @@ public class ApplicationTest {
         Assert.assertEquals("111", stringRedisTemplate.opsForValue().get("aaa"));
     }*/
 
-    @Test
+   /* @Test
     public void test() {
         User user = new User("超人", 20);
         redisTemplate.opsForValue().set(user.getName(), user);
@@ -233,5 +239,28 @@ public class ApplicationTest {
         Assert.assertEquals(20, redisTemplate.opsForValue().get("超人").getAge().longValue());
         Assert.assertEquals(30, redisTemplate.opsForValue().get("蝙蝠侠").getAge().longValue());
         Assert.assertEquals(40, redisTemplate.opsForValue().get("蜘蛛侠").getAge().longValue());
-    }
+    }*/
+
+   @Before
+   public void setUp(){
+       userMongoRepository.deleteAll();
+   }
+
+   @Test
+   public void test() {
+       userMongoRepository.save(new User(1L, "didi", 30));
+       userMongoRepository.save(new User(2L, "mama", 40));
+       userMongoRepository.save(new User(3L, "kaka", 50));
+       Assert.assertEquals(3, userMongoRepository.findAll().size());
+
+       // 删除一个User，再验证User总数
+       User u = userMongoRepository.findUserById(1L);
+       userMongoRepository.delete(u);
+       Assert.assertEquals(2, userMongoRepository.findAll().size());
+
+       // 删除一个User，再验证User总数
+       u = userMongoRepository.findByName("mama");
+       userMongoRepository.delete(u);
+       Assert.assertEquals(1, userMongoRepository.findAll().size());
+   }
 }

@@ -20,6 +20,12 @@ spring:
       password: root
       driver-class-name: com.mysql.jdbc.Driver
 ########################
+######## mongo ####
+########################
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/test
+########################
 ######## redis ####
 ########################
   redis:
