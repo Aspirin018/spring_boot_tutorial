@@ -3,12 +3,10 @@ package com.example.space;
 import com.example.space.api.domain.primary.User;
 import com.example.space.api.domain.primary.UserMongoRepository;
 import com.example.space.api.domain.primary.UserRepository;
-import com.example.space.api.domain.secondary.Message;
 import com.example.space.api.domain.secondary.MessageRepository;
 import com.example.space.api.service.UserService;
-import com.example.space.framework.ProjectProperties;
+import com.example.space.framework.properties.ProjectProperties;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,18 +14,9 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.http.MediaType;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.RequestBuilder;
-
-import java.util.Optional;
-
-import static org.hamcrest.Matchers.equalTo;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 //import  org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 

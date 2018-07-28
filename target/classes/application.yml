@@ -20,6 +20,11 @@ spring:
       password: root
       driver-class-name: com.mysql.jdbc.Driver
 ########################
+# 指定加载哪个环境的配置文件#
+########################
+  profiles:
+    active: dev
+########################
 ######## mongo ####
 ########################
   data:
@@ -53,3 +58,13 @@ com:
     space:
       name: this is author name
       title: springboot实战项目
+      desc: ${com.example.space.name}正在写${com.example.space.title}
+########################
+######## 自定义随机值属性 #
+########################
+  value: ${random.value}
+  number: ${random.int}
+  bignumber: ${random.long}
+  test1: ${random.int(10)}
+  test2: ${random.int[10, 20]}
+
