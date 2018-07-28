@@ -18,6 +18,8 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+
+import java.util.concurrent.Future;
 //import  org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 
@@ -269,9 +271,22 @@ public class ApplicationTest {
 
    @Test
    public void test() throws InterruptedException {
-       task.doTaskOne();
+      /* task.doTaskOne();
        task.doTaskTwo();
        task.doTaskThree();
+*/
+       long start = System.currentTimeMillis();
+       Future<String> task1 = task.doTaskOne1();
+       Future<String> task2 = task.doTaskTwo2();
+       Future<String> task3 = task.doTaskThree3();
+       while (true){
+           if(task1.isDone() && task2.isDone() && task3.isDone()) {
+               break;
+           }
+           Thread.sleep(1000);
+       }
+       long end = System.currentTimeMillis();
+       System.out.println("任务全部完成， 总耗时：" + (end - start) + "毫秒");
    }
 
 }
