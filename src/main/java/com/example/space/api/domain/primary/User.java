@@ -17,7 +17,10 @@ public class User implements Serializable {
     @GeneratedValue
     private Long id;
 
-    @Column(nullable = false)
+    /**
+     * 为测试事务，设置长度不超过5， 默认长度255， 设置后需要重新运行使在数据库中生效
+     */
+    @Column(nullable = false, length = 5)
     private String name;
 
     @Column(nullable = false)

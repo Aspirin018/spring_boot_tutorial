@@ -21,7 +21,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.apache.log4j.Logger;
-
+import org.springframework.transaction.annotation.Transactional;
 
 
 import java.util.concurrent.Future;
@@ -145,8 +145,21 @@ public class ApplicationTest {
 
         Assert.assertEquals(3, userService.getAllUsers().intValue());
     }*/
-/*
+
+    /**
+     * 我们使用了spring-boot-starter-jdbc或spring-boot-starter-data-jpa依赖的时候，
+     * 框架会自动默认分别注入DataSourceTransactionManager或JpaTransactionManager。
+     * 所以我们不需要任何额外配置就可以用@Transactional注解进行事务的使用
+     *
+     * 不加@Transactional注解时未启用事物，保存第6条数据失败，但前五条数据可以保存成功
+     * 添加@Transactional注解，第6条保存失败事物回滚
+     *
+     * 这里主要通过单元测试演示了如何使用@Transactional注解来声明一个函数需要被事务管理，
+     * 通常我们单元测试为了保证每个测试之间的数据独立，会使用@Rollback注解让每个单元测试都能在结束时回滚。
+     * 而真正在开发业务逻辑时，我们通常在service层接口中使用@Transactional来对各个业务逻辑进行事务管理
+     */
     @Test
+    @Transactional
     public void test(){
         // 创建10条记录
         userRepository.save(new User("AAA", 10));
@@ -154,13 +167,13 @@ public class ApplicationTest {
         userRepository.save(new User("CCC", 30));
         userRepository.save(new User("DDD", 40));
         userRepository.save(new User("EEE", 50));
-        userRepository.save(new User("FFF", 60));
+        userRepository.save(new User("FFFFFFFF", 60));
         userRepository.save(new User("GGG", 70));
         userRepository.save(new User("HHH", 80));
         userRepository.save(new User("III", 90));
         userRepository.save(new User("JJJ", 100));
 
-        // 测试findAll, 查询所有记录
+      /*  // 测试findAll, 查询所有记录
         Assert.assertEquals(10, userRepository.findAll().size());
 
         // 测试findByName, 查询姓名为FFF的User
@@ -176,8 +189,8 @@ public class ApplicationTest {
         userRepository.delete(userRepository.findByName("AAA"));
 
         // 测试findAll, 查询所有记录, 验证上面的删除是否成功
-        Assert.assertEquals(9, userRepository.findAll().size());
-    }*/
+        Assert.assertEquals(9, userRepository.findAll().size());*/
+    }
 
     /*@Before
     public void setUp(){
