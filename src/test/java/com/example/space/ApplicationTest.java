@@ -1,13 +1,14 @@
 package com.example.space;
 
 import com.example.space.api.domain.primary.User;
-import com.example.space.api.domain.primary.UserMongoRepository;
+//import com.example.space.api.domain.primary.UserMongoRepository;
 import com.example.space.api.domain.primary.UserRepository;
 import com.example.space.api.domain.secondary.MessageRepository;
 import com.example.space.api.service.UserService;
 import com.example.space.framework.asyncTask.Task;
 import com.example.space.framework.properties.ProjectProperties;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.LoggerFactory;
@@ -61,8 +62,8 @@ public class ApplicationTest {
     @Autowired
     private RedisTemplate<String, User> redisTemplate;
 
-    @Autowired
-    private UserMongoRepository userMongoRepository;
+   /* @Autowired
+    private UserMongoRepository userMongoRepository;*/
 
    /* @Before
     public void setUp() {
@@ -295,11 +296,11 @@ public class ApplicationTest {
 
     private Logger logger = Logger.getLogger(getClass());
 
-    @Test
+    /*@Test
     public void test() throws Exception {
         logger.info("输出info");
         logger.debug("输出debug");
         logger.error("输出error");
-    }
+    }*/
 
 }

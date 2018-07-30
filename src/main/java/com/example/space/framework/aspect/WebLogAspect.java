@@ -1,5 +1,7 @@
 package com.example.space.framework.aspect;
 
+//import com.mongodb.BasicDBObject;
+import com.mongodb.BasicDBObject;
 import org.apache.log4j.Logger;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
@@ -13,6 +15,9 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Arrays;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Map;
 
 
 /**
@@ -29,10 +34,14 @@ import java.util.Arrays;
  */
 @Aspect
 @Component
-@Order(5)
+@Order(1)
 public class WebLogAspect {
 
-    private Logger logger = Logger.getLogger(getClass());
+//    private Logger logger = Logger.getLogger(getClass());
+    /**
+     * 注意这里的logger要打印日志到mongo: "mongodb"和log4j.properties中的配置要一致
+     */
+    private Logger logger = Logger.getLogger("mongodb");
 
     /**
      * 在WebLogAspect切面中，分别通过doBefore和doAfterReturning两个独立函数实现了切点头部和切点返回后执行的内容，
@@ -47,6 +56,10 @@ public class WebLogAspect {
     public void webLog(){}
 
 
+   /* *//**
+     * 利用切面打印请求日志
+     * @param joinPoint
+     *//*
     @Before("webLog()")
     public void doBefore(JoinPoint joinPoint){
 
@@ -60,6 +73,42 @@ public class WebLogAspect {
         logger.info("IP:" + request.getRemoteAddr());
         logger.info("CLASS_METHOD:" + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
         logger.info("ARGS:" + Arrays.toString(joinPoint.getArgs()));
+    }*/
+
+    @Before("webLog()")
+    public void doBefore(JoinPoint joinPoint){
+        ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+        HttpServletRequest request = attributes.getRequest();
+        BasicDBObject logInfo = getBasicDBObject(request, joinPoint);
+        logger.info(logInfo);
+    }
+
+    private BasicDBObject getBasicDBObject(HttpServletRequest request, JoinPoint joinPoint){
+        BasicDBObject object = new BasicDBObject();
+        object.append("requestURL", request.getRequestURL().toString());
+        object.append("requestURI", request.getRequestURI());
+        object.append("queryString", request.getQueryString());
+        object.append("remoteAddr", request.getRemoteAddr());
+        object.append("remotePort", request.getRemotePort());
+        object.append("localAddr", request.getLocalAddr());
+        object.append("localName", request.getLocalName());
+        object.append("method", request.getMethod());
+        object.append("headers", getHeaderInfo(request));
+        object.append("parameters", request.getParameterMap());
+        object.append("classMethod", joinPoint.getSignature().getDeclaringTypeName());
+        object.append("args", Arrays.toString(joinPoint.getArgs()));
+        return object;
+    }
+
+    private Map<String, String> getHeaderInfo(HttpServletRequest request){
+        Map<String, String> map = new HashMap<>();
+        Enumeration headerNames = request.getHeaderNames();
+        while (headerNames.hasMoreElements()){
+            String key = (String) headerNames.nextElement();
+            String value = request.getHeader(key);
+            map.put(key, value);
+        }
+        return map;
     }
 
     @AfterReturning(returning = "ret", pointcut = "webLog()")
